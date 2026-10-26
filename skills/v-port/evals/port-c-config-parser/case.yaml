@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: port-c-config-parser
+context:
+  scaffold_script: place-files.sh
+expected_outcome: |
+  A pure V port of the C config parser that keeps the observable behaviour: key=value
+  parsing, comments and blank lines, whitespace trimming, last duplicate wins, missing
+  key absent, and the four error causes. The V API uses !Config and ?string instead of
+  error codes and NULL, a typed error, no unsafe, and a test file that ports every C
+  case. PORTING.md records the API map and deliberate differences.

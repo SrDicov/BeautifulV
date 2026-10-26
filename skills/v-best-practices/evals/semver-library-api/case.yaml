@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: semver-library-api
+expected_outcome: |
+  A small V library that parses SemVer 2.0.0 strings into a Version struct with private
+  fields and accessors, returns a dedicated error type on invalid input, implements
+  `.str()` and a comparison method, documents every public item, and tests precedence,
+  pre-release, build metadata, and the error cases. It compiles with `v -check -shared`
+  and passes `v test`, `v fmt -verify`, and `v vet -W`.

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">Beautiful V</title>
+  <desc id="desc">A dark banner with a large V monogram and the subtitle Idiomatic V, distilled.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#12243a"/>
+      <stop offset="1" stop-color="#0a2a2e"/>
+    </linearGradient>
+    <linearGradient id="v" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6ee7ff"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <rect width="1200" height="320" fill="url(#grid)"/>
+  <path d="M96 76 L188 244 H236 L328 76 H276 L212 204 L148 76 Z" fill="url(#v)"/>
+  <path d="M96 76 L188 244 H200 L108 76 Z" fill="#ffffff" fill-opacity="0.12"/>
+  <text x="380" y="170" fill="#e6f7ff" font-family="ui-monospace, 'DejaVu Sans Mono', monospace" font-size="82" font-weight="700" letter-spacing="2">Beautiful V</text>
+  <text x="386" y="222" fill="#8fb3c7" font-family="ui-sans-serif, system-ui, sans-serif" font-size="28">Idiomatic V, distilled</text>
+  <text x="386" y="262" fill="#2dd4bf" font-family="ui-monospace, 'DejaVu Sans Mono', monospace" font-size="18" letter-spacing="4">FAST · LIGHT · SAFE</text>
+</svg>

@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: log-summary-cli
+expected_outcome: |
+  A V CLI that reads a log file, counts entries per level, skips and reports malformed
+  lines, sorts the summary deterministically, handles a missing file without panicking,
+  names the file in its errors, and has unit tests for the counting and formatting.

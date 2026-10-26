@@ -1,0 +1,23 @@
+name: Propose a rule
+description: A V rule the skills get wrong or miss, with a published source.
+labels: [rule]
+body:
+  - type: textarea
+    id: rule
+    attributes:
+      label: The rule
+      description: What should the skills say, and why does it matter?
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Published source
+      description: Link to the V documentation, compiler source, standard library, or an accepted issue.
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Code today, and code instead
+      render: v

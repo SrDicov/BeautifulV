@@ -1,0 +1,23 @@
+{
+  "name": "beautiful-v",
+  "version": "1.0.0",
+  "description": "Write, review, port, and enforce idiomatic V: three skills distilled from the V language reference, the compiler, and the standard library, plus a drop-in style gate.",
+  "license": "MIT",
+  "author": {
+    "name": "SrDicov",
+    "url": "https://github.com/SrDicov"
+  },
+  "homepage": "https://github.com/SrDicov/BeautifulV",
+  "repository": "https://github.com/SrDicov/BeautifulV",
+  "keywords": [
+    "api-design",
+    "best-practices",
+    "code-review",
+    "migration",
+    "porting",
+    "v",
+    "vlang",
+    "skill",
+    "style-guide"
+  ]
+}

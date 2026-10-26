@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: port-python-task-graph
+context:
+  scaffold_script: place-files.sh
+expected_outcome: |
+  A V port of the Python task graph that maps exceptions to Result, kind to an enum,
+  optional priority to ?int, and preserves definition order for independent tasks. The
+  topological order matches the original, cycles and unknown dependencies return errors
+  instead of panicking, the summary groups kinds in the same fixed order, every Python
+  test is ported, and PORTING.md records the mapping.

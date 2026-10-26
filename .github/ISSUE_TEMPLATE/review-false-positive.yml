@@ -1,0 +1,22 @@
+name: Review false positive
+description: v-review flagged code that is actually fine.
+labels: [review]
+body:
+  - type: textarea
+    id: code
+    attributes:
+      label: The code
+      render: v
+    validations:
+      required: true
+  - type: textarea
+    id: finding
+    attributes:
+      label: What the review said
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Why it is fine
+      description: Link to the rule, or explain the constraint the review missed.

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="Beautiful V icon">
+  <rect width="256" height="256" rx="48" fill="#0b1220"/>
+  <path d="M48 60 L112 196 H144 L208 60 H168 L128 156 L88 60 Z" fill="#2dd4bf"/>
+  <path d="M48 60 L112 196 H120 L56 60 Z" fill="#ffffff" fill-opacity="0.12"/>
+</svg>

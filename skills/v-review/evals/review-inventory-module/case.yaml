@@ -1,0 +1,13 @@
+schema_version: "1.1"
+name: review-inventory-module
+context:
+  scaffold_script: place-files.sh
+expected_outcome: |
+  REVIEW.md is a prioritized review of inventory.v that does not modify the code. It
+  finds the real problems (panics and swallowed errors on fallible paths, public mutable
+  fields with no validation, a bool mode parameter, no tests for the parser or the
+  error paths, a detached spawn, byte indexing that panics on an empty name, a zero-value
+  lookup that cannot distinguish missing from empty, and missing public documentation),
+  ranks the panics above style issues, cites a file:line and a named rule for each
+  finding, shows each fix as a short code change, groups repeated issues, and says what
+  the code already does well.

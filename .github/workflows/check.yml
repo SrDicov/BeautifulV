@@ -1,0 +1,30 @@
+name: Check
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Check skills and manifests
+        run: python3 scripts/check-skill.py
+      - name: Check the checker
+        run: python3 -m unittest discover -s tests -v
+
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Install V
+        uses: vlang/setup-v@v1
+        with:
+          # Pinned to the V commit the skills and examples were verified against.
+          version: '5aa85424dae81be5dc44866abb31bbae74ce9128'
+      - name: Prove the style gate fires
+        run: bash scripts/check-lints.sh

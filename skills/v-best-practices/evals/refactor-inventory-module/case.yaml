@@ -1,0 +1,11 @@
+schema_version: "1.1"
+name: refactor-inventory-module
+context:
+  scaffold_script: place-files.sh
+expected_outcome: |
+  A refactored inventory.v that keeps the observable behaviour but removes the panics,
+  the swallowed errors, the public mutable fields, the bool mode parameter, the detached
+  spawn, and the byte-only initial. It returns Option or Result where the old code
+  returned a zero value or crashed, adds tests for the parser and error paths, documents
+  the public API, sorts the report, and writes CHANGES.md listing each change and any
+  signature change.
