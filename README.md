@@ -151,6 +151,22 @@ gemini skills install https://github.com/SrDicov/BeautifulV --path skills/v-revi
 gemini skills install https://github.com/SrDicov/BeautifulV --path skills/v-port
 ```
 
+### OpenCode
+
+OpenCode discovers the skills from `~/.config/opencode/skills/`, but it does not turn
+them into slash commands by itself. The matching command files add `/v-best-practices`,
+`/v-review`, and `/v-port`:
+
+```bash
+git clone --depth 1 https://github.com/SrDicov/BeautifulV /tmp/BeautifulV
+mkdir -p ~/.config/opencode/commands ~/.config/opencode/skills
+cp -R /tmp/BeautifulV/skills/v-* ~/.config/opencode/skills/
+cp /tmp/BeautifulV/opencode/commands/*.md ~/.config/opencode/commands/
+opencode reload
+```
+
+Restart OpenCode if the commands do not appear in the `/` menu.
+
 ### OpenAI Codex, Cursor, or anything else: copy the folder
 
 Clone the repo and copy the three skill folders into your agent's skills directory. Most
@@ -287,6 +303,8 @@ BeautifulV/
 │   └── v-port/             porting skill
 │       ├── SKILL.md
 │       └── evals/          a C module and a Python module to port
+├── opencode/
+│   └── commands/           slash commands that load each skill
 ├── lints/
 │   ├── gate.sh             drop-in fmt + vet gate
 │   ├── README.md           what the gate catches and what it cannot

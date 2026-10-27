@@ -6,6 +6,11 @@ All notable changes to this project are listed here. Versions follow
 
 ## [Unreleased]
 
+### Added
+
+- **OpenCode slash commands.** `opencode/commands/` defines `/v-best-practices`,
+  `/v-review`, and `/v-port`; each loads its skill before running.
+
 ## [1.0.0] - 2026-10-26
 
 The first release: a V-focused fork of BeautifulRust.
